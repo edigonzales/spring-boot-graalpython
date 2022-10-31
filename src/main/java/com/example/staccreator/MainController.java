@@ -61,6 +61,10 @@ public class MainController {
         Value pystacCreator = pystacCreatorClass.newInstance();
         StacCreator stacCreator = pystacCreator.as(StacCreator.class);
         stacCreator.create("dummy");
+        
+        
+        context.close(); 
+
 
 //        Value result = context.eval("python",
 //                "import math\n"
@@ -122,7 +126,6 @@ public class MainController {
 //        StacCreator stacCreator = pystacCreator.as(StacCreator.class);
 //        stacCreator.create("dummy");
 
-//        context.close(); 
 
         return "foo";
     }
