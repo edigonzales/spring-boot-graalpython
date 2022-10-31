@@ -55,6 +55,7 @@ public class MainController {
         System.out.println(context.getPolyglotBindings().getMemberKeys());
         
         Value pystacCreatorClass = context.getBindings("python").getMember("StacCreator");
+        //Value pystacCreatorClass = context.getPolyglotBindings().getMember("StacCreator");
         System.out.println(pystacCreatorClass);
 
         Value pystacCreator = pystacCreatorClass.newInstance();
